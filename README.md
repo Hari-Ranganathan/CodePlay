@@ -1,2 +1,2 @@
-# courseraworks
-Will add the coursera exercise. 
+# CodePlay  
+Playing with code across the many languages
