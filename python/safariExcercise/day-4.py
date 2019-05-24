@@ -1,0 +1,5 @@
+print("Word Counter")
+valueInput = input("Please enter the sentence to count the number of words. Press ENTER to end the sentence: ")
+listValue = valueInput.split()
+length = len(listValue)
+print("In this sentence, the number of words: ",length)
