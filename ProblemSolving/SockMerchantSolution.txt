@@ -1,0 +1,24 @@
+// Complete the sockMerchant function below.
+    static int sockMerchant(int n, int[] ar) {
+        //Sorting the given data
+        int tmp;
+        for(int i =1; i < ar.length;i++){
+            for(int j =i; j > 0 ; j--){
+                if(ar[j]< ar[j-1]){
+                tmp = ar[j];
+                ar[j] = ar[j -1];
+                ar[j-1] = tmp;    
+                }
+            }
+        }
+        
+        //Logic
+        int pair = 0;
+        for(int y=0; y < n-1; y++){
+                if(ar[y] == ar[y+1]){
+                    pair++;
+                    y++;
+                }
+        }
+        return pair;
+    }
